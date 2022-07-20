@@ -16,8 +16,7 @@ export function Button({
   return (
     <button
       onClick={action}
-      // disabled={variant === 'disabled'}
-      disabled={true}
+      disabled={variant === 'disabled'}
       className={classnames(
         styles.button,
         styles['button-' + variant],
